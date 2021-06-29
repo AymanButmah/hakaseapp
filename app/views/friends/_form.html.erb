@@ -10,33 +10,43 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+ <div class="row">
+  <div class="field input-field col s6">
+  <i class="material-icons prefix">account_circle</i>
     <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name,class:"validate" %>
   </div>
 
-  <div class="field">
+  <div class="field input-field col s6">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name,class:"validate" %>
   </div>
-
-  <div class="field">
+</div>
+  <div class="field input-field col s12">
+     <i class="material-icons prefix">email</i>
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email,class:"validate" %>
   </div>
-
-  <div class="field">
+ <div class="row">
+  <div class="field input-field col s6">
+    <i class="material-icons prefix">phone</i>
     <%= form.label :phone %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone,class:"validate" %>
   </div>
 
-  <div class="field">
+  <div class="field input-field col s6">
+  <i class="material-icons prefix">format_quote</i>
     <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+    <%= form.text_field :twitter,class:"validate" %>
   </div>
-
+</div>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"waves-effect waves-teal btn"%>
   </div>
 <% end %>
+
+<style>
+.btn{
+  background-color: #006064;
+}
+</style>

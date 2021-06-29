@@ -1,5 +1,10 @@
-<h1>New Friend</h1>
+<h1>Add new friend</h1>
 
 <%= render 'form', friend: @friend %>
-
-<%= link_to 'Back', friends_path %>
+<br>
+<%= link_to 'Back', friends_path,class:"waves-effect waves-teal btn" %>
+<style>
+.btn{
+  background-color: #006064;
+}
+</style>

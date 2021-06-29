@@ -1,6 +1,16 @@
 <h1>Editing Friend</h1>
 
 <%= render 'form', friend: @friend %>
+<br>
 
-<%= link_to 'Show', @friend %> |
-<%= link_to 'Back', friends_path %>
+<br>
+<%= link_to 'Show', @friend  , class:"waves-effect waves-teal btn"%> |
+<%= link_to 'Back', friends_path,class:"waves-effect waves-teal btn" %>
+
+<style>
+
+.btn:nth-child(odd){
+  background-color: #006064;
+}
+
+</style>

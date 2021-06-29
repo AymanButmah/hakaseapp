@@ -1,8 +1,5 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Friends</h1>
-
-<table>
+<table class="responsive-table highlight centered">
   <thead>
     <tr>
       <th>First name</th>
@@ -32,4 +29,9 @@
 
 <br>
 
-<%= link_to 'New Friend', new_friend_path %>
+<%= link_to 'New Friend', new_friend_path,class:"waves-effect waves-teal btn" %>
+<style>
+.btn{
+  background-color: #37474f;
+}
+</style>

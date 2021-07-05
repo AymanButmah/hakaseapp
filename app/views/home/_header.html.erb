@@ -1,6 +1,27 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script>
+	$(document).ready(function(){
+ 		$('.sidenav').sidenav();
+ 	});
+
+</script>
+
 <nav>
     <div class="nav-wrapper blue-grey darken-1" >
       <%= link_to "Ayman's Blog", root_path, class:"brand-logo center" %>
+
+
+		<a href="#" class="sidenav-trigger" data-target="mobile-nav">
+			<i class="material-icons">menu</i>
+		</a>
+
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <% if user_signed_in?%>
                     <li> <%= link_to "Friends", friends_path, class:"left hide-on-med-and-down" %></li>
@@ -15,4 +36,15 @@
     </div>
   </nav>
 
+ <ul class="sidenav" id="mobile-nav"> 
+ <% if user_signed_in?%>
+                    <li> <%= link_to "Friends", friends_path%></li>
+                    <li><%= link_to "New Friend", new_friend_path %></li>
+                    <li><%= link_to "Sign Out", destroy_user_session_path,method: :delete%></li>
+                    <li><%= link_to "Edit Profile", edit_user_registration_path%></li>
+            <% else %>
+                    <li><%= link_to "Sign Up", new_user_registration_path %></li>
+                    <li><%= link_to "Sign In", new_user_session_path %></li>
+             <% end %>
  
+ </ul>

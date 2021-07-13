@@ -1,24 +1,30 @@
-# README
+![](demo_pic/logo.svg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![](https://badgen.net/npm/v/express)   ![](https://badgen.net/david/dep/zeit/pkg) ![](https://badgen.net/github/release/babel/babel) 
+# Ruby-on-Rials-Friends-App
 
-Things you may want to cover:
+I'v
 
-* Ruby version
+## Requiremnsts 
 
-* System dependencies
 
-* Configuration
+•	Ubuntu 18.04 or higher
 
-* Database creation
+•	RoR installed
 
-* Database initialization
+•	PostgreSQL installed
 
-* How to run the test suite
+• Gemfile bundle i
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Demo
+![](demo_pic/Deutsch.png)
 
-* ...
+
+![](demo_pic/Main.png)
+
+## Refernces (Book)
+Learn Ruby On Rails For Web Development: Learn Rails The Fast And Easy Way Kindle Edition by John Elder 
+
+## ContactMe :smile:
+[linkedin](https://www.linkedin.com/in/ayman-butmah-816b361b3/)

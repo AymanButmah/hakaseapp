@@ -14,6 +14,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.8'
+gem 'rails-i18n'
+gem 'i18n-debug', group: :development
+
 
 
 group :development, :test do

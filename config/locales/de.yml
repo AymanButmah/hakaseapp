@@ -1,0 +1,10 @@
+
+de:
+  home:
+      header: 
+        signup: "Anmeldung"
+        friends: "Alle Freunde"
+        newfriend: "Freund hinzufügen"
+        signout: "Austragen"
+        editprofile: "Profil bearbeiten"
+        signin: "Anmelden"

@@ -24,27 +24,26 @@
 
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <% if user_signed_in?%>
-                    <li> <%= link_to "Friends", friends_path, class:"left hide-on-med-and-down" %></li>
-                    <li><%= link_to "New Friend", new_friend_path, class:"left hide-on-med-and-down" %></li>
-                    <li><%= link_to "Sign Out", destroy_user_session_path,method: :delete, class:"left hide-on-med-and-down" %></li>
-                    <li><%= link_to "Edit Profile", edit_user_registration_path, class:"left hide-on-med-and-down" %></li>
+                    <li> <%= link_to translate('.friends'), friends_path, class:"left hide-on-med-and-down" %></li>
+                    <li><%= link_to translate('.newfriend'),  new_friend_path, class:"left hide-on-med-and-down" %></li>
+                    <li><%= link_to translate('.signout'), destroy_user_session_path,method: :delete, class:"left hide-on-med-and-down" %></li>
+                    <li><%= link_to translate('.editprofile'),  edit_user_registration_path, class:"left hide-on-med-and-down" %></li>
             <% else %>
-                    <li><%= link_to "Sign Up", new_user_registration_path, class:"left hide-on-med-and-down" %></li>
-                    <li><%= link_to "Sign In", new_user_session_path,class:"left hide-on-med-and-down" %></li>
+                <li><%= link_to translate('.signup'),new_user_registration_path, class:"left hide-on-med-and-down" %></li>
+                    <li><%= link_to translate('.signin'), new_user_session_path,class:"left hide-on-med-and-down" %></li>
              <% end %>
       </ul>
     </div>
   </nav>
 
  <ul class="sidenav" id="mobile-nav"> 
- <% if user_signed_in?%>
-                    <li> <%= link_to "Friends", friends_path%></li>
-                    <li><%= link_to "New Friend", new_friend_path %></li>
-                    <li><%= link_to "Sign Out", destroy_user_session_path,method: :delete%></li>
-                    <li><%= link_to "Edit Profile", edit_user_registration_path%></li>
+     <% if user_signed_in?%>
+                    <li> <%= link_to translate('.friends'), friends_path %></li>
+                    <li><%= link_to translate('.newfriend'),  new_friend_path %></li>
+                    <li><%= link_to translate('.signout'), destroy_user_session_path,method: :delete %></li>
+                    <li><%= link_to translate('.editprofile'),  edit_user_registration_path %></li>
             <% else %>
-                    <li><%= link_to "Sign Up", new_user_registration_path %></li>
-                    <li><%= link_to "Sign In", new_user_session_path %></li>
+                     <li><%= link_to translate('.signup'),new_user_registration_path%></li>
+                    <li><%= link_to translate('.signin'), new_user_session_path %></li>
              <% end %>
- 
  </ul>

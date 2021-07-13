@@ -3,7 +3,7 @@
 ![](https://badgen.net/npm/v/express)   ![](https://badgen.net/david/dep/zeit/pkg) ![](https://badgen.net/github/release/babel/babel) 
 # Ruby-on-Rials-Friends-App
 
-I'v
+
 
 ## Requiremnsts 
 

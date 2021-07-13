@@ -4,7 +4,6 @@
 # Ruby-on-Rials-Friends-App
 
 
-
 ## Requiremnsts 
 
 
